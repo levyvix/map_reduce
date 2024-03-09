@@ -1,0 +1,86 @@
+2024-03-09T14:34:03.807909-0300 INFO Chamando função wrapper com argumentos: (3, 4), kwargs: {} loguru_demo.py
+2024-03-09T14:34:03.810907-0300 INFO Função example_function demorou 0.0 segundos para ser executada loguru_demo.py
+2024-03-09T14:34:03.811907-0300 INFO Função wrapper retornou: 7 loguru_demo.py
+2024-03-09T14:34:53.553400-0300 INFO Chamando função example_function com argumentos: (3, 4), kwargs: {} loguru_demo.py
+2024-03-09T14:34:53.556398-0300 INFO Função example_function retornou: 7 loguru_demo.py
+2024-03-09T14:34:53.556398-0300 INFO Função example_function demorou 0.00299835205078125 segundos para ser executada loguru_demo.py
+2024-03-09T14:37:28.083237-0300 INFO Chamando função example_function com argumentos: (3, 0), kwargs: {} loguru_demo.py
+2024-03-09T14:37:28.085774-0300 ERROR An error has been caught in function 'wrapper', process 'MainProcess' (11412), thread 'MainThread' (2368): loguru_demo.py
+Traceback (most recent call last):
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 70, in <module>
+    print(example_function(3, 0))
+          └ <function time_function.<locals>.wrapper at 0x0000017A966B3240>
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 51, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (3, 0)
+             └ <function example_function at 0x0000017A966B31A0>
+
+> File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 36, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (3, 0)
+             └ <function example_function at 0x0000017A966B2E80>
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 66, in example_function
+    return x / y
+           │   └ 0
+           └ 3
+
+ZeroDivisionError: division by zero
+2024-03-09T14:37:28.103763-0300 INFO Função example_function retornou: None loguru_demo.py
+2024-03-09T14:37:28.104762-0300 INFO Função example_function demorou 0.021524906158447266 segundos para ser executada loguru_demo.py
+2024-03-09T14:37:35.936892-0300 INFO Chamando função example_function com argumentos: (3, 0), kwargs: {} loguru_demo.py
+2024-03-09T14:37:35.938890-0300 ERROR Exceção ao chamar a função example_function: division by zero loguru_demo.py
+Traceback (most recent call last):
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 70, in <module>
+    print(example_function(3, 0))
+          └ <function time_function.<locals>.wrapper at 0x000001E57E262E80>
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 51, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (3, 0)
+             └ <function example_function at 0x000001E57E262DE0>
+
+> File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 36, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (3, 0)
+             └ <function example_function at 0x000001E57E262D40>
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 66, in example_function
+    return x / y
+           │   └ 0
+           └ 3
+
+ZeroDivisionError: division by zero
+2024-03-09T14:38:36.726376-0300 INFO Chamando função example_function com argumentos: (3, 0), kwargs: {} loguru_demo.py
+2024-03-09T14:38:36.729386-0300 ERROR Exceção ao chamar a função example_function: division by zero loguru_demo.py
+Traceback (most recent call last):
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 71, in <module>
+    print(example_function(3, 0))
+          └ <function time_function.<locals>.wrapper at 0x0000014812CA3240>
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 52, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (3, 0)
+             └ <function example_function at 0x0000014812CA31A0>
+
+> File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 37, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (3, 0)
+             └ <function example_function at 0x0000014812CA3100>
+
+  File "c:\Users\levyv\Desktop\proj\map_reduce\loguru_demo.py", line 67, in example_function
+    return x / y
+           │   └ 0
+           └ 3
+
+ZeroDivisionError: division by zero
