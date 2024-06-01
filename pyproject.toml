@@ -13,6 +13,8 @@ pathos = "^0.3.2"
 networkx = "^3.2.1"
 toolz = "^0.12.1"
 loguru = "^0.7.2"
+pyspark = "^3.5.1"
+ipython = "^8.25.0"
 
 
 [build-system]
